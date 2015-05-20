@@ -1,10 +1,14 @@
 ProtoJeef::Application.routes.draw do
 
+  get "intranet/stock"
+
   get "intranet/admpedidos"
 
   get "internet/index"
 
   get "extranet/atencion"
+  
+  get "extranet/pedidos"
 
   get "welcome/index"
 
