@@ -1,13 +1,5 @@
 ProtoJeef::Application.routes.draw do
 
-  get "intranet/stock"
-  
-  get "intranet/index"
-
-  get "intranet/admpedidos"
-
-  get "intranet/facturacion"
-  
   get "internet/index"
   
   get "internet/ingresar"
@@ -17,6 +9,14 @@ ProtoJeef::Application.routes.draw do
   get "internet/menu"
 
   get "internet/registrook"
+  
+  get "intranet/stock"
+  
+  get "intranet/index"
+
+  get "intranet/admpedidos"
+
+  get "intranet/facturacion"
 
   get "extranet/atencionpers"
   
