@@ -1,16 +1,28 @@
 ProtoJeef::Application.routes.draw do
 
   get "intranet/stock"
+  
+  get "intranet/index"
 
   get "intranet/admpedidos"
 
+  get "intranet/facturacion"
+  
   get "internet/index"
+  
+  get "internet/ingresar"
 
-  get "extranet/atencion"
+  get "internet/menu"
+
+  get "extranet/atencionpers"
+  
+  get "extranet/delivery"
+  
+  get "extranet/entrada"
   
   get "extranet/pedidos"
-
-  get "welcome/index"
+  
+  get "extranet/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
