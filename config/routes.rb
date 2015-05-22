@@ -11,6 +11,8 @@ ProtoJeef::Application.routes.draw do
   get "internet/index"
   
   get "internet/ingresar"
+  
+  get "internet/registro"
 
   get "internet/menu"
 
