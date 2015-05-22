@@ -16,6 +16,8 @@ ProtoJeef::Application.routes.draw do
 
   get "internet/menu"
 
+  get "internet/registrook"
+
   get "extranet/atencionpers"
   
   get "extranet/delivery"
