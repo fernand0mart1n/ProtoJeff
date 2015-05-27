@@ -14,6 +14,8 @@ ProtoJeef::Application.routes.draw do
   
   get "intranet/index"
 
+  get "intranet/altamozo"
+
   get "intranet/admpedidos"
 
   get "intranet/facturacion"
