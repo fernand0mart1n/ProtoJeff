@@ -17,6 +17,12 @@ ProtoJeef::Application.routes.draw do
   get "intranet/admpedidos"
 
   get "intranet/facturacion"
+  
+  get "intranet/admmozos"
+  
+  get "intranet/llamadasmesas"
+  
+  get "intranet/listapedidos"
 
   get "extranet/atencionpers"
   
@@ -27,6 +33,10 @@ ProtoJeef::Application.routes.draw do
   get "extranet/pedidos"
   
   get "extranet/index"
+  
+  get "extranet/perfilpersonalpedidos"
+  
+  get "extranet/reservamesas"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
