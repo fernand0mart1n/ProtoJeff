@@ -1,6 +1,7 @@
 <html>
  <head>
   <title>Proto Jeff</title>
+  <script type="text/javascript" src="funciones.js" ></script>
  </head>
  <body>
   <h1> Llamadas </h1>
@@ -12,8 +13,11 @@
       </tr>
       <tr>
        <td>15</td>
-       <td><input type="text"></td> 
-       <td><input type="submit" onclick="alert('Mozo enviado')"value="Enviar mozo"></td>
+         	
+       
+       <td><input type="numeric" id="mesa"></td> 
+       <td><input type="submit" onclick="ValidarNumero(document.getElementById('mesa').value);" 
+        value="Enviar mozo"></td>
       </tr>
       <tr>
        <td>3</td>
@@ -23,7 +27,8 @@
     </table>
 
     <input type="button" value="Volver atrás" onclick="window.location='index';">
-
+	
+	
 
  </body>
 </html>
