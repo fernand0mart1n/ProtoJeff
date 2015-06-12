@@ -5,9 +5,9 @@
 </head>
 <form method="post">
 	Número de mesa:<br>
-	<input type="number" required>
+	<input type="number" id="n" required>
 	<br>
 	<br>
     <input type="button" value="Volver atrás" onclick="window.location='index';">
-	<input type="submit" value="Pedir mozo!!">
+	<input type="submit" id="b" value="Pedir mozo!!" onclick="if(ValidarNumero(documet.getElementById('n').value)==true){alert('Mozo Pedido');document.getElementById('b').submit();}">
 </form>

@@ -9,14 +9,15 @@
 			<form method="post">
 				<h1>Ingresar</h1>
 				Usuario:<br>
-				<input type="text" name="nombre" required>
+				<input type="text" name="nombre" id="n"required>
 				<br>
 				Contraseña:<br>
 				<input type="text" name="apellido" required>
 				<br>
 			    <br>
 			    <input type="button" value="Volver atrás" onclick="window.location='index';">
-				<input type="button" value="Confirmar" onclick="window.location='index';">
+				<input type="button" id="b" value="Confirmar" onclick=if(ValidarNombre(document.getElementById('n').value)==true){document.getElementById('b').submit();})>
+				<--"window.location='index';"-->
 			</form>
 		</div>
 		<br>

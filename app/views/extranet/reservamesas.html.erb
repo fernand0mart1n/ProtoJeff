@@ -6,11 +6,12 @@
   <table>
    <h1> Reserve una mesa para sus amigos o familiares! </h1>
    Día a reservar: <br>
-   <input type="date"> <br>
+   <input type="date" id="f"> <br>
    Cantidad de personas a reservar: <br>
-   <input type="number" name="personas"> <br>
-   <input type="submit" onclick="alert('Su reserva fue almacenada.')"value="Confirmar">
+   <input type="number" name="personas" id="n"> <br>
+   <input type="submit" id="b" value="Confirmar" onclick="if((ValidarNumero(documen.getElementById('n').value)==true)&&(ValidarFecha(document.getElementById('f').value)==true)){alert('Pedido Enviado');document.getElementById('b').submit();}">
     <input type="button" value="Volver atrás" onclick="window.location='index';">
+    
   </table>
  </body>
 </html>
