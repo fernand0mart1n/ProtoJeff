@@ -2,7 +2,11 @@ ProtoJeef::Application.routes.draw do
 
   get "internet/index"
   
+  post "internet/index"
+  
   get "internet/ingresar"
+  
+  post "internet/ingresar"
   
   get "internet/registro"
 
