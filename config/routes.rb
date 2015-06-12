@@ -38,6 +38,8 @@ ProtoJeef::Application.routes.draw do
   
   get "extranet/index"
   
+  post "extranet/index"
+  
   get "extranet/perfilpersonalpedidos"
   
   get "extranet/reservamesas"
