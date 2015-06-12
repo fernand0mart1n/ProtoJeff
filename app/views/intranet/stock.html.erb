@@ -22,28 +22,27 @@
 				<td>8 porciones</td>		
 				<td>$ 150</td>
 				<td>Cantidad:<input type="number" id="pedido1"></td>
-				<input type="submit" value="Confirmar" onclick="ValidarNumero(document.getElementById('pedido1').value);"
+				<input type="submit" value="Confirmar" onclick="if(ValidarNumero(document.getElementById('pedido1').value)==true){alert('Actualizado');}"
 			</tr>
 			<tr>
 				<td>Americana</td>
 				<td>8 porciones</td>		
 				<td>$ 194</td>
-				<td>Cantidad:<input type="number"></td>
-				<td><input type="submit"value="Confirmar" onclick="alert('Stock actualizado.')"></td>
+				<td>Cantidad:<input type="number" id="pedido2"></td>
+				<td><input type="submit"value="Confirmar" onclick="if(ValidarNumero(document.getElementById('pedido2').value)==true){alert('Actualizado');}"></td>
 			</tr>
 			<tr>
 				<td>Especial Ave</td>
 				<td>8 porciones</td>		
 				<td>$ 180</td>
-				<td>Cantidad:<input type="number"></td>
-				<td><input type="submit"value="Confirmar" onclick="alert('Stock actualizado.')"></td>
+				<td>Cantidad:<input type="number" id="pedido3"></td>
+				<td><input type="submit"value="Confirmar" onclick="if(ValidarNumero(document.getElementById('pedido3').value)==true){alert('Actualizado');}"></td>
 			</tr>
 			</div>
 		</table>
 		<table style="float:right">
 			<br><br>
 			<input type="submit" value="Volver atrás" onclick="window.location='index';">
-			<input type="submit" value="Confirmar" onclick="alert('Stock actualizado.')">
 		</table>
 	</body>
 

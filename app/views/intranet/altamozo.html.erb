@@ -6,13 +6,13 @@
 		<h1>Alta/Modificacion de  Mozo!</h1>
 		<table>
 			Nombre Mozo:<br>
-			<input type="text" value="Nombre"> <br>
+			<input type="text" value="Nombre" id="n" required> <br>
 			Apellido Mozo:<br>
-			<input type="text" value="Apellido"><br>
+			<input type="text" value="Apellido"id="a" required><br>
 			Horario de trabajo:<br>
 			<input type="number" value="Horario"><br><br>
 			<input type="button" value="Volver atras" onclick="window.location='admmozos';">
-			<input type="button" value="Alta" onclick="alert('Alta de nuevo mozo.')">
+			<input type="button" value="Alta" onclick="if((ValidarNombre(getElementById('n').value)==true)&&(ValidarNombre(getElementById('a').value)==true)){alert('Alta Mozo');}">
 		</table>
 	</body>
 </html>

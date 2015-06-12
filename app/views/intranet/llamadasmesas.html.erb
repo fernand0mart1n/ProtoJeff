@@ -16,13 +16,13 @@
          	
        
        <td><input type="numeric" id="mesa"></td> 
-       <td><input type="submit" onclick="ValidarNumero(document.getElementById('mesa').value);" 
+       <td><input type="submit" onclick="if(ValidarNumero(document.getElementById('mesa').value)==true){alert('Mozo Enviado');}" 
         value="Enviar mozo"></td>
       </tr>
       <tr>
        <td>3</td>
        <td><input type="text"></td> 
-       <td><input type="submit" onclick="alert('Mozo enviado')"value="Enviar mozo"></td>
+       <td><input type="submit" onclick="if(ValidarNumero(document.getElementById('mesa').value)==true){alert('Mozo Enviado');}"value="Enviar mozo"></td>
       </tr>
     </table>
 
