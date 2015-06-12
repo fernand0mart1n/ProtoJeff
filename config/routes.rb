@@ -10,6 +10,8 @@ ProtoJeef::Application.routes.draw do
 
   get "internet/registrook"
   
+  post "internet/registrook"
+  
   get "intranet/stock"
   
   get "intranet/index"
