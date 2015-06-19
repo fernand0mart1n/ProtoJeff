@@ -9,7 +9,6 @@
 			return false;
 		}
 		else {
-			alert('izi');
 			return true;
 		}
 	}
@@ -18,11 +17,10 @@ function ValidarNombre(nombre){
 		var regex = /^[a-zA-Z ]{2,30}$/;
 		var ctrl = nombre;
 		if (regex.test(ctrl)) {
-			alert('Nombre Correcto');
 			return true;
 		}
 		else {
-			alert('izi');
+			alert('Nombre incorrecto');
 			return false;
 		}	
 	}
@@ -31,7 +29,6 @@ function ValidarNumero(x){
 		
 		var n=parseInt(x);
 		if(n>0 && n<51){
-			alert('Mozo enviado a la Mesa Numero:  ' +  n);
 			return true;
 		}
 		else{ 
@@ -42,12 +39,30 @@ function ValidarNumero(x){
 	
 	function ValidarContr(c1,c2){
 		if(c1==c2){
-			alert('izi');
 			return true;
 		}
 		else{
 			alert('Tienen que coincidir las contrasenias');
 		return false;
+		}
+	}
+	
+	function ValidarCampos(r1,r2,ch1,ch2,ch3,nc1,nc2,nc3,n){
+		
+		if((ch1==true && ValidarNumero(nc1)==true)||(ch2==true && ValidarNumero(nc2).value==true)||(ch3==true && ValidarNumero(nc3).value==true)){
+			if(r1==true){
+				alert('Delibery enviado');
+				return true;
+			}
+			else if(r2==true && ValidarNumero(n)==true){
+				alert('Comida enviada a la mesa');
+				return true;
+			
+			}	
+		}
+		else{
+			alert('Campos invalidos o no puso nada');
+			return false;
 		}
 	}
 //</script>
