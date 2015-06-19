@@ -65,4 +65,17 @@ function ValidarNumero(x){
 			return false;
 		}
 	}
+	function ValidarHora(hora){
+		
+		var n=parseInt(hora);
+		if((n>= 18) && (n<=24||n==0)){
+			
+			return true;
+		}
+		else{
+			alert('Hora invalida');
+			return false;
+		}
+		
+	}
 //</script>
