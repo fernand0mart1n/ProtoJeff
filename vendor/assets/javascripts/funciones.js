@@ -14,7 +14,7 @@
 	}
 
 function ValidarNombre(nombre){
-		var regex = /^[a-zA-Z ]{2,30}$/;
+		var regex = /^[a-zA-Z]{2,30}$/;
 		var ctrl = nombre;
 		if (regex.test(ctrl)) {
 			return true;
@@ -22,7 +22,7 @@ function ValidarNombre(nombre){
 		else {
 			alert('Nombre incorrecto');
 			return false;
-		}	
+		}		
 	}
 
 function ValidarNumero(x){
