@@ -1,4 +1,5 @@
 class IntranetController < ApplicationController
+  
   def altamozo
   end
   
