@@ -1,4 +1,8 @@
 class InternetController < ApplicationController
-  def index
+  def ingresar
   end
+  
+  def registro
+  end
+  
 end

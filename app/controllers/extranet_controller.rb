@@ -1,4 +1,9 @@
 class ExtranetController < ApplicationController
-  def atencion
+  
+  def atencionpers
   end
+  
+  def reservamesas
+  end
+  
 end

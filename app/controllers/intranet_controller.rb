@@ -1,4 +1,8 @@
 class IntranetController < ApplicationController
-  def admpedidos
+  def altamozo
   end
+  
+  def stock
+  end
+  
 end
